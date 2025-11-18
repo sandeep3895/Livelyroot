@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-11T12:15:22 IST" name="Default suite" finished-at="2025-11-11T12:17:06 IST" duration-ms="104039">
+    <groups>
+    </groups>
+    <test started-at="2025-11-11T12:15:22 IST" name="Default test" finished-at="2025-11-11T12:17:06 IST" duration-ms="104039">
+      <class name="HomePage.ClassA">
+        <test-method is-config="true" signature="OpenURL()[pri:0, instance:HomePage.ClassA@22ff4249]" started-at="2025-11-11T12:14:55 IST" name="OpenURL" finished-at="2025-11-11T12:15:22 IST" duration-ms="26858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenURL -->
+        <test-method signature="ClickOrchids()[pri:1, instance:HomePage.ClassA@22ff4249]" started-at="2025-11-11T12:15:22 IST" name="ClickOrchids" finished-at="2025-11-11T12:17:06 IST" duration-ms="103928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOrchids -->
+        <test-method is-config="true" signature="closeURL()[pri:0, instance:HomePage.ClassA@22ff4249]" started-at="2025-11-11T12:17:06 IST" name="closeURL" finished-at="2025-11-11T12:17:06 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeURL -->
+      </class> <!-- HomePage.ClassA -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
