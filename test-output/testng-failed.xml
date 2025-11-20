@@ -6,8 +6,8 @@
       <class name="HomePage.ClassA">
         <methods>
           <include name="closeURL"/>
-          <include name="ClickShopPlants"/>
           <include name="OpenURL"/>
+          <include name="ClickOrchids"/>
         </methods>
       </class> <!-- HomePage.ClassA -->
     </classes>

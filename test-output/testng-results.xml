@@ -1,21 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-11T12:15:22 IST" name="Default suite" finished-at="2025-11-11T12:17:06 IST" duration-ms="104039">
+  <suite started-at="2025-11-20T10:08:41 IST" name="Default suite" finished-at="2025-11-20T10:10:14 IST" duration-ms="93415">
     <groups>
     </groups>
-    <test started-at="2025-11-11T12:15:22 IST" name="Default test" finished-at="2025-11-11T12:17:06 IST" duration-ms="104039">
+    <test started-at="2025-11-20T10:08:41 IST" name="Default test" finished-at="2025-11-20T10:10:14 IST" duration-ms="93415">
       <class name="HomePage.ClassA">
-        <test-method is-config="true" signature="OpenURL()[pri:0, instance:HomePage.ClassA@22ff4249]" started-at="2025-11-11T12:14:55 IST" name="OpenURL" finished-at="2025-11-11T12:15:22 IST" duration-ms="26858" status="PASS">
+        <test-method is-config="true" signature="OpenURL()[pri:0, instance:HomePage.ClassA@4c12331b]" started-at="2025-11-20T10:08:14 IST" name="OpenURL" finished-at="2025-11-20T10:08:41 IST" duration-ms="26165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenURL -->
-        <test-method signature="ClickOrchids()[pri:1, instance:HomePage.ClassA@22ff4249]" started-at="2025-11-11T12:15:22 IST" name="ClickOrchids" finished-at="2025-11-11T12:17:06 IST" duration-ms="103928" status="PASS">
+        <test-method signature="ClickOrchids()[pri:1, instance:HomePage.ClassA@4c12331b]" started-at="2025-11-20T10:08:41 IST" name="ClickOrchids" finished-at="2025-11-20T10:10:14 IST" duration-ms="93353" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" name="checkout" data-terms-required="false" class="btn cart__checkout">...</button> is not clickable at point (1015, 251). Other element would receive the click: <div class="bfcm-progress-info">...</div>
+  (Session info: chrome=142.0.7444.163)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9f1cbf93821416197006846734562365, clickElement {id=f.0CA5D8FC04A7D844D28422087431A9C5.d.50EA1F228D2176CCFC49CB23AB10E7AC.e.512}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\india\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59709}, goog:processID: 19544, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59709/devtoo..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9f1cbf93821416197006846734562365)] -> xpath: //button[@name='checkout']]
+Session ID: 9f1cbf93821416197006846734562365]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" name="checkout" data-terms-required="false" class="btn cart__checkout">...</button> is not clickable at point (1015, 251). Other element would receive the click: <div class="bfcm-progress-info">...</div>
+  (Session info: chrome=142.0.7444.163)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9f1cbf93821416197006846734562365, clickElement {id=f.0CA5D8FC04A7D844D28422087431A9C5.d.50EA1F228D2176CCFC49CB23AB10E7AC.e.512}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\india\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59709}, goog:processID: 19544, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59709/devtoo..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (9f1cbf93821416197006846734562365)] -> xpath: //button[@name='checkout']]
+Session ID: 9f1cbf93821416197006846734562365
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at HomePage.ClassA.ClickOrchids(ClassA.java:107)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClickOrchids -->
-        <test-method is-config="true" signature="closeURL()[pri:0, instance:HomePage.ClassA@22ff4249]" started-at="2025-11-11T12:17:06 IST" name="closeURL" finished-at="2025-11-11T12:17:06 IST" duration-ms="371" status="PASS">
+        <test-method is-config="true" signature="closeURL()[pri:0, instance:HomePage.ClassA@4c12331b]" started-at="2025-11-20T10:10:14 IST" name="closeURL" finished-at="2025-11-20T10:10:14 IST" duration-ms="317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeURL -->
