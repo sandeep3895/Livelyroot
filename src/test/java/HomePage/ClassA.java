@@ -23,7 +23,7 @@ public void OpenURL() {
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 }
-//@Test(priority=1)
+@Test(priority=1)
 public void SearchProduct() throws InterruptedException {
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
@@ -42,13 +42,13 @@ public void SearchProduct() throws InterruptedException {
     searchBox.sendKeys(Keys.ENTER);
       Thread.sleep(3000);
 }
-//@Test(priority=2)
+@Test(priority=2)
 public void ClickGardenClub() throws InterruptedException {
-	driver.findElement(By.xpath("//toggle-menu")).click();
+	driver.findElement(By.xpath("//button[@class='site-nav__link site-nav__link--icon medium-up--hide mobile-nav-trigger']")).click();
 	driver.findElement(By.xpath("//span[text()='Garden Club']")).click();
 	Thread.sleep(5000);
 }
-//@Test(priority = 1)
+@Test(priority = 1)
 public void ClickShopPlants() throws InterruptedException {
     JavascriptExecutor js = (JavascriptExecutor) driver;
     WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -69,7 +69,7 @@ public void ClickShopPlants() throws InterruptedException {
 
     System.out.println("Clicked on Popular Collections successfully!");
 }
-//@Test(priority=1)
+@Test(priority=1)
 public void Click_BestSellers() throws InterruptedException {
 	driver.findElement(By.xpath("//img[@src='//www.livelyroot.com/cdn/shop/collections/Best_Selling_Plants.jpg?v=1747198854&width=1080']")).click();
 	Thread.sleep(7000);
@@ -96,7 +96,7 @@ public void Click_BestSellers() throws InterruptedException {
 	driver.findElement(By.xpath("//button[@name='checkout']")).click();
 	Thread.sleep(8000);
 }
-//@Test(priority=1)
+@Test(priority=1)
 public void ClickOrchids() throws InterruptedException {
 	//driver.get("https://www.livelyroot.com/");
 	driver.findElement(By.xpath("//a[@class='site-header__logo-link']")).click();
@@ -108,10 +108,32 @@ public void ClickOrchids() throws InterruptedException {
 	Thread.sleep(6000);
 	
 }
-
-public void ShopHolidayDecor() {
+@Test(priority=1)
+public void ShopHolidayDecor() throws InterruptedException{
 	driver.findElement(By.xpath("(//div[@class='grid-item__meta'])[5]")).click();
 	driver.findElement(By.xpath("//label[text()='XL']")).click();
+	driver.findElement(By.xpath("//label[@for='template--15535860809810__main-4862525472850-2-1']")).click();
+	driver.findElement(By.xpath("(//button[@type='submit'])[4]")).click();
+	Thread.sleep(3000);
+    WebElement e1=driver.findElement(By.xpath("(//button[@class='js-qty__adjust js-qty__adjust--plus'])[1]"));
+    int i=1;
+    while(i<=5) {
+    	e1.click();
+    	Thread.sleep(3000);
+    	i+=1;
+    }
+    driver.findElement(By.xpath("//button[@name='checkout']")).click();
+    Thread.sleep(4000);
+}
+@Test
+public void PorchandPatio() throws InterruptedException{
+	driver.findElement(By.xpath("(//div[@class='product-grid-item'])[9]")).click();
+	Thread.sleep(5000);
+	driver.findElement(By.xpath("//label[@for='template--15535860809810__main-7498944512082-2-1']")).click();
+	driver.findElement(By.xpath("(//button[@type='submit'])[4]")).click();
+	Thread.sleep(3500);
+	driver.findElement(By.xpath("//button[@name='checkout']")).click();
+	Thread.sleep(10000);
 })
 @AfterSuite
 public void closeURL() {
