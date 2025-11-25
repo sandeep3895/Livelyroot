@@ -16,6 +16,7 @@ import org.testng.annotations.*;
 public class ClassA {
 public static WebDriver driver;
 Actions ac;
+
 @BeforeSuite
 public void OpenURL() {
 	driver=new ChromeDriver();
@@ -23,6 +24,7 @@ public void OpenURL() {
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 }
+
 //@Test
 //public void SearchProduct() throws InterruptedException {
 //    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -148,9 +150,8 @@ public void BlackFridaySale() throws InterruptedException{
 	Thread.sleep(6500);
 	driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
 }
-)
 @AfterSuite
 public void closeURL() {
-	driver.close();
+    driver.close();
 }
 }

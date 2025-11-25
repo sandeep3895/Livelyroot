@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HomePage.ClassA">
+      <class name="HomePage.ClassB">
         <methods>
-          <include name="closeURL"/>
-          <include name="OpenURL"/>
+          <include name="ShopHolidayDecor"/>
           <include name="ClickOrchids"/>
+          <include name="OpenURL"/>
+          <include name="CloseURL"/>
         </methods>
-      </class> <!-- HomePage.ClassA -->
+      </class> <!-- HomePage.ClassB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
